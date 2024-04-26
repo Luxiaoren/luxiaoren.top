@@ -1,7 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@font-face {
+  font-family: 'Jersey15'; /* 自定义字体名称 */
+  src: url('../font/Jersey15-Regular.ttf') format('truetype'); /* 字体文件的路径 */
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
