@@ -21,33 +21,32 @@ export default function Index() {
         setSplitUp(true)
     }, 2000)
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between">
-            <div className="bg-white absolute w-screen min-h-screen left-0 top-0">
+        <main className="min-h-screen site-main bg-white">
+            <header className="w-screen text-black flex justify-start h-20 items-center p-5">
+                <p className="">
+                    <span className="text-2xl font-jersey">Luxiaoren</span>
+                    <span>js</span>
+                </p>
+                <p className="ml-20 cursor-pointer w-32 header-item">
+                    <a href="/about">简历</a>
+                </p>
+                <p className="ml-20 cursor-pointer w-32">文档</p>
+            </header>
+            <div className="w-screen  bg-white">
                 <div className={`split-box z-[1] bg-white absolute min-h-screen w-1/2 left-0 top-0 ${splitUp ? 'split-left' : ''}`}>
                     {loading('left')}
                 </div>
                 <div className={`split-box z-[1] bg-white absolute min-h-screen w-1/2 right-0 top-0 ${splitUp ? 'split-right' : ''}`}>{loading('right')}</div>
 
-                <div className="text-4xl title cursor-pointer flex justify-center font-jersey flex-wrap">
-                    <p className="text-black-500 this" id="this">THIS&nbsp;</p>
-                    <p className="text-black-500 is">IS&nbsp;</p>
-                    <p className="text-black-500 a">A&nbsp;</p>
-                    <p className="text-black-500 develope">DEVELOPER&nbsp;</p>
-                    <p className="text-black-500 for">FOR&nbsp;</p>
-                    <p className="text-black-500 production">PRODUCTION&nbsp;</p>
-                    <p className="text-black-500 environment">ENVIRONMENT</p>
-                    {/*<p className="text-black-500">生</p>*/}
-                    {/*<p className="text-black-500">产</p>*/}
-                    {/*<p className="text-black-500">环</p>*/}
-                    {/*<p className="text-black-500">境</p>*/}
-                    {/*<p className="text-black-500">的</p>*/}
-                    {/*<p className="text-black-500">开</p>*/}
-                    {/*<p className="text-black-500">发</p>*/}
-                    {/*<p className="text-black-500">者</p>*/}
-                    {/*<p className="text-black-500 name">--康勇</p>*/}
+                <div className="text-4xl title cursor-pointer">
+                    <p className="text-black-500" >这是一个用于生产环境的</p>
+                    <p className="" >Web开发者</p>
                 </div>
-
-                <footer id="footer" className="w-screen absolute bottom-0 color-black text-gray-500">
+                <div className="luxiaoren-content">
+                    <p className="">Luxiaoren 为您提供生产环境所需的所有web开发: 包括传统pc网站，h5页面，企微应用，小程序开发（Taro,
+                        uniapp,原生）, nestjs开发（node）</p>
+                </div>
+                <footer id="footer" className="w-screen fixed bottom-0 color-black text-gray-500 bg-white">
                     <div className="flex justify-center text-black-500">
                         <span data-v-733d78f1=""> Copyright&nbsp;© </span>
                         <span className="site-start">2024 - </span> 2025

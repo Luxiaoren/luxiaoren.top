@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.kangyong {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:0  50px ;
+}
+
+h1 {
+  margin: 50px auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: #0070C0;
+  border-bottom: 3px solid #ccc;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+h2::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background: #0070C0;
+  left: 0;
+  top: 100%;
+}
+
+.profile-item {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key-value {
+  width: 50%;
+  display: flex;
+}
+
+.profile-item-key {
+  width: 100px;
+  text-align: justify;
+}
+
+.profile-item-key:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+}
+
+.prog-skill-item {
+  margin: 20px 0;
+}
+
+.prog-skill-item img{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.work-expricene-item {
+  padding: 20px 0;
+}
+
+.work-expricene-item > div {
+  padding: 10px 0 0;
+}
+
+.work-com {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 100px;
+}
+
+.work-com p:last-child {
+  font-weight: bold;
+}
+
+.work-position,.project-name,.project-time {
+  display: flex;
+}
+
+.work-position > p:first-of-type, .work-duty > p:first-of-type,.project-name > p:first-of-type,.project-time > p:first-of-type,.project-duty > p:first-of-type,.project-key > p:first-of-type {
+  width: 100px;
+  text-align: justify;
+}
+
+.work-position > p:first-child:after, .work-duty > p:first-child:after,.project-name  > p:first-of-type:after,.project-time  > p:first-of-type:after,.project-duty  > p:first-child:after,.project-key  > p:first-child:after {
+  content: '';
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+  height: 0;
+}
+
+.work-duty,.project-duty,.project-key {
+  display: flex;
+  margin-bottom: 20px;
+
+}
+
+.work-duty-content p,.project-duty-content p,.project-key-content p {
+  margin-bottom: 10px;
+}
+.project-item{
+  padding: 20px 0;
+}
+.project-item >div{
+  padding-left: 20px;
+  position: relative;
+}
+.project-item img{
+  position: absolute;
+  left:0;
+  top:5px
+}
+img{
+  width:12px;
+  height:14px;
+
+}
