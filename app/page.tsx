@@ -4,6 +4,7 @@ import './app.css'
 import {useEffect, useState} from "react";
 // @ts-ignore
 import Physics from 'physicsjs';
+import mailSvg from '../images/mail.svg'
 const loading = (postion: string) => {
 
     return (
@@ -45,6 +46,10 @@ export default function Index() {
                 <div className="luxiaoren-content">
                     <p className="">Luxiaoren 为您提供生产环境所需的所有web开发: 包括传统pc网站，h5页面，企微应用，小程序开发（Taro,
                         uniapp,原生）, nestjs开发（node）</p>
+                    <p className="flex justify-center mt-10" style={{lineHeight: '50px', cursor: 'pointer'}}>
+                        <Image src={mailSvg} alt="mail"  width="50" height={50}/>
+                        <span style={{marginLeft: '20px'}}> kk@luxiaoren.top</span>
+                    </p>
                 </div>
                 <footer id="footer" className="w-screen fixed bottom-0 color-black text-gray-500 bg-white">
                     <div className="flex justify-center text-black-500">
